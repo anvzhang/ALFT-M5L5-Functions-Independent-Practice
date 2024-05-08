@@ -14,16 +14,25 @@ function add(x, y) {
 // Subtraction should now work in the calculator
 function subtract(x, y) {
   console.log(`Subtracting ${x} - ${y}`);
+  return x - y;
 }
 
 //  Create a function called multiply that returns
 // the result of 2 parameters multiplied
 // Multiply should now work in the calculator
+function multiply(x, y) {
+  console.log(`Multiplying ${x} * ${y}`);
+  return x * y;
+}
 
 
 //  Create a function called divide that returns
 // the result of the first parameter divided by the second paramter
 // Divide should now work in the calculator
+function divide(x, y) {
+  console.log(`Dividing ${x} / ${y}`);
+  return x / y;
+}
 
 /// Extension
 // 🧮 Update the negateValue function to return the
@@ -36,6 +45,7 @@ function subtract(x, y) {
 // The '+/-' button should now work in the calculator
 function negateValue(val) {
   console.log(`Negating ${val}`);
+  return subtract(0, val);
 }
 
 // 🧮 Update the convertValueToPercentage function to return the
@@ -48,6 +58,7 @@ function negateValue(val) {
 // The '%' button should now work in the calculator
 function convertValueToPercentage(val) {
   console.log(`Converting ${val} to a percentage`);
+  return divide(val, 100);
 }
 
 
